@@ -1,7 +1,11 @@
 #!/usr/bin/env python3
 
-"""Insert doc string here
-
+"""This module has three seperate functions. g(x) takes a numerical input and
+calculates the value of the Gaussian normalized function at that point.  Interval
+splits a range between a and b into equal portions of length dx.  Then, it calculates
+the value of an arbitary function at those points.  Integral takes a list as an input
+parameter, a list such as the one that the function interval will produce.  Integral
+will approximate the integral of the arbitrary function using the trapezoidal rule.
 """
 
 # Name: Jarod Penniman and Jared Love
@@ -19,12 +23,22 @@ def g(x):
 	return gaus
 
 def interval(f, a, b, dx):
-	"""Doc String"""
+	"""Takes an arbitrary function and splits it into intervals of length dx between
+	the bounds a and b.  If dx does not split the interval evenly, the ceiling will be
+	taken to obtain an integer number of intervals."""
 	length = b-a
 	num_list = []
-	n = int(length/dx)
+	n = int(scipy.ceil(length/dx))
 	comp_list = [f(a+i*dx) for i in range (0,n+1)]
 	return comp_list
 
-if __name__ == "__main__":
-	print(interval(g,-2,2,.25))
+def integrate(i, dx):
+	"""Takes a list of values, i.  i is split into n equal intervals of length dx, and contains the
+	values of an arbitrary function at these points. With this data, this function will approximate
+	the integral of the function using the trapezoidal rule."""
+	n = len(i)
+	sum = i[0]+i[n-1]
+	for k in range(1,n-1):
+		sum += 2*i[k]
+	sum = (dx/2)*sum
+	return sum

@@ -1,8 +1,8 @@
 # PHYS220 CW 3
 
-**Author(s):** **CHANGEME**
+**Author(s):** **Jarod Penniman, Jared Love**
 
-[![Build Status](https://travis-ci.org/chapman-phys220-2017f/cw-03-YOURNAME.svg?branch=master)](https://travis-ci.org/chapman-phys220-2017f/cw-03-YOURNAME)
+[![Build Status](https://travis-ci.org/chapman-phys220-2017f/cw-03-jare-od.svg?branch=master)](https://travis-ci.org/chapman-phys220-2017f/cw-03-jare-od)
 
 ## Specification
 
@@ -39,7 +39,7 @@ Pro-tip: using git to manage conflicts on Jupyter notebooks is a pain. I recomme
 
 Analyze in this section what you found useful about this assignment in your own words. Include any lingering questions or comments that you may have.
 
-**CHANGEME**
+**This assignment really helped with our understanding of how to properly format code with doc strings, comments, functions, etc.  Furthermore, it was a good introduction to test modules and how they function.**
 
 ## Honor Pledge
 
@@ -50,4 +50,4 @@ I pledge that all the work in this repository is my own with only the following 
 
 Signed,
 
-**YOURNAME**
+**Jarod Penniman and Jared Love**
