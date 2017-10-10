@@ -14,7 +14,9 @@ will approximate the integral of the arbitrary function using the trapezoidal ru
 # Course: PHYS220/MATH220/CPSC220 Fall 2017
 # Assignment: CW 03
 
-import scipy
+import scipy         ### Note, your tests fail because the scipy module was not found
+                     ### For this assignment, it was better to use math
+	             ### For future assignments, it's better to use numpy explicitly, which replaces math
 
 def g(x):
 	"""Calculates a value for the normalized Gaussian function for a value x"""
